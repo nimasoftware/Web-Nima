@@ -59,11 +59,11 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Nima Software";
             $("#favicon").attr("href", "assets/images/favicon.ico");
         }
         else {
-            document.title = "Come Back To Portfolio";
+            document.title = "Volver al Portfolio";
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });

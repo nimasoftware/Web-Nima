@@ -65,11 +65,11 @@ document.onkeydown = function(e) {
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Experience | Portfolio Jigar Sable";
+        document.title = "Nima Software Portfolio";
         $("#favicon").attr("href","/assets/images/favicon.ico");
     }
     else {
-        document.title = "Come Back To Portfolio";
+        document.title = "volver al Portfolio";
         $("#favicon").attr("href","/assets/images/favhand.png");
     }
 });
