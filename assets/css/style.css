@@ -628,13 +628,15 @@ header .navbar ul li a:hover {
   color: #00d4ff;
 }
 .work .box-container {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem;
 }
 .work .box-container .box {
-  flex: 1 1 30rem;
+  flex: 1 1 calc(40% - 0.75rem); /* Cambiado: 50% menos la mitad del gap */
+  max-width: calc(40% - 0.75rem); /* Agregado: para asegurar que no crezca más */
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 166, 232, 0.2);
   position: relative;
@@ -734,7 +736,6 @@ header .navbar ul li a:hover {
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
-
 .experience .timeline {
   position: relative;
   max-width: 1200px;
