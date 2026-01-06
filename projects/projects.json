@@ -32,8 +32,8 @@
   },
     {
     "name": "Gestor de tareas interno",
-    "desc": "Aplicación web para la gestión de tareas internas de un equipo de trabajo. Permite asignar, seguir y completar tareas de manera eficiente.",
-    "image": "cover",
+    "desc": "Aplicación web para la gestión de tareas internas de un equipo de desarrollo. Permite asignar, seguir y completar tareas de manera eficiente.",
+    "image": "gestor2",
     "category": "mern",
     "links": {
       "view": "https://resumegenx.netlify.app/",
