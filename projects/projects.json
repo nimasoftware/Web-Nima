@@ -32,7 +32,7 @@
   },
     {
     "name": "Gestor de tareas interno",
-    "desc": "Aplicación web para la gestión de tareas internas de un equipo de desarrollo. Permite asignar, seguir y completar tareas de manera eficiente.",
+    "desc": "Aplicación web para la gestión de tareas internas de un equipo de trabajo. Permite asignar, seguir y completar tareas de manera eficiente.",
     "image": "gestor2",
     "category": "mern",
     "links": {
