@@ -37,23 +37,31 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+// <!-- emailjs to mail contact form data -->
+// Inicializar EmailJS una sola vez al cargar la página
+emailjs.init("T54mMWRibfjwkIuDS");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
+$("#contact-form").submit(function (event) {
+    event.preventDefault(); // Prevenir el envío por defecto PRIMERO
+    
+    // Deshabilitar el botón mientras se envía
+    const btn = $(this).find('button[type="submit"]');
+    const originalText = btn.html();
+    btn.html('Enviando...').prop('disabled', true);
 
+    emailjs.sendForm('service_l2kne5p', 'template_lboi0wv', this) // Usar 'this' en lugar de '#contact-form'
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("¡Formulario enviado exitosamente!");
+            btn.html(originalText).prop('disabled', false);
+        }, function (error) {
+            console.log('FAILED...', error);
+            alert("Error al enviar el formulario. Por favor, intenta nuevamente.");
+            btn.html(originalText).prop('disabled', false);
+        });
+});
+// <!-- emailjs to mail contact form data -->
 });
 
 document.addEventListener('visibilitychange',
