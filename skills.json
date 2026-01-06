@@ -30,11 +30,6 @@
         "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
     },
 
-
-    {
-        "name": "CSS",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
     {
         "name": "JavaScript",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
@@ -61,13 +56,6 @@
     {
         "name": "AWS",
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
-    },
-
-
-
-    {
-        "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
         "name": "WordPress",
