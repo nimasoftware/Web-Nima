@@ -69,7 +69,7 @@ function(){
         $("#favicon").attr("href","/assets/images/favicon.ico");
     }
     else {
-        document.title = "volver al Portfolio";
-        $("#favicon").attr("href","/assets/images/favhand.png");
+            document.title = "Nima Software";
+            $("#favicon").attr("href", "assets/images/favicon.ico");
     }
 });

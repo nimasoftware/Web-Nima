@@ -63,8 +63,8 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/favicon.ico");
         }
         else {
-            document.title = "Volver al Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "Nima Software";
+            $("#favicon").attr("href", "assets/images/favicon.ico");
         }
     });
 
